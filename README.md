@@ -1,5 +1,4 @@
-## Back-End 
-# 🕵️‍♂️ SpyCat API
+# 🕵️‍♂️ SpyCat API Back-End 
 
 A simple Django + DRF project that manages spy cats and their missions.
 
@@ -104,5 +103,75 @@ POST /api/missions/{id}/assign_cat/
 ## 🔐 Validations
 - `notes` update is restricted for completed targets/missions
 - A mission cannot be deleted if it has an assigned cat
+
+---
+
+
+# 🐱 SpyCat Frontend
+
+A simple Next.js frontend for managing spy cats.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Go to the frontend directory
+
+```bash
+cd frontend
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+Or if you use yarn:
+
+```bash
+yarn install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+Or with yarn:
+
+```bash
+yarn dev
+```
+
+### 4. Open in browser
+
+Go to: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🧩 Features
+
+- List all spy cats (from backend API)
+- Add new spy cat (name, experience, breed, salary)
+- Update salary of a cat
+- Delete a cat
+- Shows error messages on API failure
+
+---
+
+## 📁 Project Structure
+
+- `src/app/page.tsx` – main UI page
+- `src/lib/api.ts` – API communication with Django backend
+
+---
+
+## 🔗 Backend
+
+Make sure your Django backend is running at `http://127.0.0.1:8000`.
+
+Update the `API_BASE_URL` in `src/lib/api.ts` if needed.
 
 ---
